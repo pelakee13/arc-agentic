@@ -303,7 +303,7 @@ def get_or_create_chat():
         st.session_state["_gemini_client"] = client
 
         st.session_state["gemini_chat"] = client.chats.create(
-            model="gemini-1.5-flash",
+            model="gemini-2.0-flash",
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_PROMPT,
                 temperature=0.7,
